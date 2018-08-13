@@ -1,0 +1,44 @@
+<!-- {{ if isset .Site.Params "features" }}
+{{ if .Site.Params.features.enable }}
+{{ if gt (len .Site.Data.features) 0 }}
+<section class="bar background-white">
+    <a id="video"></a>
+    <h3 style="text-align:center; font-size:30px;color:rgb(88, 88, 88)">Видео</h3>
+    <div class="container">
+        {{ range $index, $element := sort .Site.Data.features "weight" }}
+        {{ if eq (mod $index 3) 0 }}
+        
+		
+		<img src="">
+		{{ end }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }} -->
+
+
+
+<a id="video"></a>
+<div class="clearfix"></div>
+<br>
+<section id="description">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-md-push-5 img-desc">
+            <video controls src="img/video/Nikolaev_Sonya.mp4"  poster="img/video/Nikolaev_Sonya_poster.png" class="img-responsive" alt="">
+       
+      </div>
+      <div class="col-md-5 col-md-pull-7 content-desc">
+          <h4 style=" font-size:30px;color:rgb(56, 56, 56)">Демонстрация приложения</h4>
+          <p>
+               Практическое применение электронной версии «Школы Николаева»
+          </p>
+      </div>
+  </div>
+</div>
+<div class="clearfix">
+</div>
+<br>
+</section>

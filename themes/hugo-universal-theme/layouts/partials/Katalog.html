@@ -1,0 +1,133 @@
+<!-- {{ if isset .Site.Params "features" }}
+{{ if .Site.Params.features.enable }}
+{{ if gt (len .Site.Data.features) 0 }}
+<section class="bar background-white">
+    <a id="katalog"></a>
+    <h3 style="text-align:center; font-size:30px;color:rgb(88, 88, 88)">Каталог</h3>
+    <div class="container">
+        {{ range $index, $element := sort .Site.Data.features "weight" }}
+        {{ if eq (mod $index 3) 0 }}
+        
+		
+		<img src="">
+		{{ end }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }} -->
+
+
+<section id="portfolio">
+    <div class="container">
+        <!-- Start Title -->
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 title-section">
+                    <a id="katalog"></a>
+                <h4 class="title" style="text-align:center; font-size:30px;color:rgb(88, 88, 88)"><span>Каталог</span></h4>
+                <h5><a class="katalog" href="http://www.e-musica.ru/catalog.html">Посмотреть весь каталог</a></h5>
+                <div class="line" style="margin-top: 1em;"><i class="icon icon-24 icon-clipboard"></i></div>
+                <h5 class="title" style="margin-top: 1em; margin-bottom: 50px;"><span>Избранное</span></h5>
+            </div>
+        </div>
+        <!-- End Title -->
+        <!-- Start gallery filter  -->
+
+        <!-- End gallery filter -->
+        <!-- Start Images Gallery -->
+        <div class="row">
+            <div id="gallery" class="masonry  gallery">
+                <div class="grid-sizer col-md-3 col-sm-4 col-xs-12"></div>
+
+                                    <div data-filter="" class="grid-item col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap-gallery">
+                        <div class="img-wrapper">
+                            <a href="img/Katalog/big-1.jpg" class="hover zoom"  data-pretty="prettyPhoto">
+                            <img src="img/Katalog/school-fortepiano.jpg" class="img-responsive" alt="Школа Николаева">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                                    <div data-filter="" class="grid-item col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap-gallery">
+                        <div class="img-wrapper">
+                            <a href="img/Katalog/big-2.jpg" class="hover zoom"  data-pretty="prettyPhoto">
+                            <img src="img/Katalog/solfedg-1.jpg" class="img-responsive" alt="Калмыков и Фридкин. Одноголосие">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                                    <div data-filter="" class="grid-item col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap-gallery">
+                        <div class="img-wrapper">
+                            <a href="img/Katalog/big-3.jpg" class="hover zoom"  data-pretty="prettyPhoto">
+                            <img src="img/Katalog/solfedg-2.jpg" class="img-responsive" alt="Калмыков и Фридкин. Двухголосие">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                                    <div data-filter="" class="grid-item col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap-gallery">
+                        <div class="img-wrapper">
+                            <a href="img/Katalog/big-4.jpg" class="hover zoom"  data-pretty="prettyPhoto">
+                            <img src="img/Katalog/bethoven.jpg" class="img-responsive" alt="Письма Бетховена">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                                    <div data-filter="" class="grid-item col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap-gallery">
+                        <div class="img-wrapper">
+                            <a href="img/Katalog/big-5.jpg" class="hover zoom"  data-pretty="prettyPhoto">
+                            <img src="img/Katalog/muz-lit.jpg" class="img-responsive" alt="Музыкальная литература. Первый год обучения">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                                    <div data-filter="" class="grid-item col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap-gallery">
+                        <div class="img-wrapper">
+                            <a href="img/Katalog/big-6.jpg" class="hover zoom"  data-pretty="prettyPhoto">
+                            <img src="img/Katalog/muz-lit-2.jpg" class="img-responsive" alt="Музыкальная литература зарубежных стран">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                                    <div data-filter="" class="grid-item col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap-gallery">
+                        <div class="img-wrapper">
+                            <a href="img/Katalog/big-7.jpg" class="hover zoom"  data-pretty="prettyPhoto">
+                            <img src="img/Katalog/rus-skrip-muz.jpg" class="img-responsive" alt="Русская скрипичная музыка">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                                    <div data-filter="" class="grid-item col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap-gallery">
+                        <div class="img-wrapper">
+                            <a href="img/Katalog/big-8.jpg" class="hover zoom"  data-pretty="prettyPhoto">
+                            <img src="img/Katalog/rus-viol-muz.jpg" class="img-responsive" alt="Русская виолончельная музыка">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Images Gallery -->
+    </div>
+</section>
+<div class="clearfix"></div>	<!-- End Gellery -->
+
+<!-- Start Article -->
+    <section id="blog" class="gray">
+    <div class="container">
+        <!-- Start Title -->
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 title-section">
+            <h4 class="title"><span></span>Блог</h4>
+                <div class="line"><i class="icon icon-24 icon-compose"></i></div>
+            </div>
+        </div>
+        <!-- End Title -->

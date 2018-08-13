@@ -1,0 +1,82 @@
+<!-- {{ if isset .Site.Params "features" }}
+{{ if .Site.Params.features.enable }}
+{{ if gt (len .Site.Data.features) 0 }}
+<section class="bar background-white">
+    <a id="features"></a>
+    <h3 style="text-align:center; font-size:30px;color:rgb(88, 88, 88)">Возможности</h3>
+    <div class="container">
+        {{ range $index, $element := sort .Site.Data.features "weight" }}
+        {{ if eq (mod $index 3) 0 }}
+        
+		<div class="col-md-12">
+            <div class="row">
+		{{ end }}
+				<div class="col-md-4">
+                    <div class="box-simple">
+                         <div class="icon">
+                            <i class="{{ .icon }}"></i>
+                        </div> 
+                        
+                        <h3>{{ $element.name }}</h3>
+                        <p>{{ $element.description | markdownify }}</p>
+                    </div>
+                </div>
+		{{ if or (eq (mod $index 3) 2) (eq $index (sub (len $.Site.Data.features) 1 )) }}
+			</div>
+		</div>
+		{{ end }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }} -->
+
+
+<a id="features"></a>
+<section id="about">
+    <div class="container" id="template">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 title-section">
+          <h4 class="title" style="text-align:center; font-size:30px;color:rgb(88, 88, 88)">Возможности</h4>
+          <div class="line">
+            <i class="icon icon-24 icon-brightness"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row wrap-feature-one">
+        <div class="col-md-3 col-sm-6 feature-one">
+          <!-- <i class="icon icon-64 icon-music"></i> -->
+          <div class="icon">
+            <i class=""></i>
+          </div>
+          <h5 class="title" style="text-align:center; font-size:20px;color:rgb(56, 56, 56)">Играть или петь под «минус»</h5>
+          <p>
+            Удобная возможность при самостоятельном обучении играть или петь вместе со звучащим в планшете аккомпанементом или мелодией второго голоса.
+          </p>
+        </div>
+        <div class="col-md-3 col-sm-6 feature-one">
+          <i class="icon icon-64 icon-profle"></i>
+          <h5 class="title" style="text-align:center; font-size:20px;color:rgb(56, 56, 56)">Домашний репетитор в помощь родителям</h5>
+          <p>
+            На время домашних занятий родитель фактически становится учителем. Но исполнить эту роль очень трудно. Вот тут мобильное приложение (на платформе iOS) окажется для него незаменимым помощником. Кроме чисто учебных целей совместные занятия с использованием
+            планшета будут способствовать еще большему сближению родителя с ребенком, который с большей охотой будет каждый раз садиться за пианино и заниматься.
+          </p>
+        </div>
+        <div class="col-md-3 col-sm-6 feature-one">
+          <i class="icon icon-64 icon-tablet"></i>
+          <h5 class="title" style="text-align:center; font-size:20px;color:rgb(56, 56, 56)">Знаменитые учебники в электронной версии</h5>
+          <p>
+            Издательство «Музыка» — крупнейший производитель учебной музыкальной литературы. Среди его «хитов» — «Школа Николаева», «Сольфеджио Калмыкова и Фридкина», учебники по музыкальной литературе и другие учебные пособия — от музыкальных и общеобразовательных
+            школ до вузов. Все самые востребованные учебники «Музыка» со временем выпустит и в электронной версии.
+          </p>
+        </div>
+        <div class="col-md-3 col-sm-6 feature-one">
+          <i class="icon icon-64 icon-browser"></i>
+          <h5 class="title" style="text-align:center; font-size:20px;color:rgb(56, 56, 56)">Занятия без инструмента</h5>
+          <p>
+            При разучивании двухголосия в процессе подготовки домашнего задания по сольфеджио, ученики сталкиваются с рядом трудностей: правильным исполнением своей партии, выстраиванием ансамбля с другим голосом. Приложение позволяет прослушать каждый из голосов
+            и их совместное звучание, выучить каждую партию и спеть вместе со вторым, звучащим на мобильном приложении, голосом, написать диктант.
+          </p>
+        </div>
+      </div>
